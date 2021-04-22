@@ -1,0 +1,118 @@
+@media (min-width: 0px) {
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background: black;
+    height: 400px;
+  }
+
+  .logo {
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    top: 3%;
+    translate: -50%;
+  }
+
+  .desktop-nav {
+    display: none;
+  }
+
+  /* ? Hamburger Menu Icon*/
+
+  .hamburger-icon img {
+    position: absolute;
+    left: 80%;
+    top: 3.5%;
+    width: 150px;
+  }
+
+  .hero-img {
+    position: relative;
+  }
+
+  .hero-headline {
+    top: 15%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 10rem;
+    color: white;
+
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+  }
+
+  .hero-paragraph {
+    top: 25%;
+    left: 50%;
+    translate: -50% -50%;
+    font-size: 5rem;
+    color: #9dd692;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+  }
+
+  /* ? Hero Button */
+
+  .hero-button-paragraph {
+    top: 85%;
+    left: 40%;
+    translate: -50% -50%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    border-style: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: white;
+  }
+
+  .hero-button {
+    top: 85%;
+    left: 65%;
+    translate: -50% -50%;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    background-color: purple;
+    border-style: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: white;
+  }
+
+  /* ? Hero Button END */
+
+  /* ?  Hero Image */
+  .hero-img-container {
+    background-image: url("https://i.computer-bild.de/imgs/1/2/6/3/6/6/4/5/Logitech-Streamcam-im-Test-2048x1152-cc5e9569cd1aa218.jpg");
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+  }
+
+  /* ?  Hero Image END*/
+
+  /* ? Go Live Section*/
+
+  .go-live-section {
+    border: red solid 2px;
+  }
+
+  .go-live-h2 {
+    border: solid red 3px;
+    display: inline-block;
+    font-size: 5rem;
+    margin: 0;
+  }
+}
