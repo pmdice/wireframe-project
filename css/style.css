@@ -1,118 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
 @media (min-width: 0px) {
-  body {
-    margin: 0;
-    padding: 0;
+  .navbar-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
     box-sizing: border-box;
+    overflow: hidden;
   }
-  header {
-    background: black;
-    height: 400px;
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
   }
 
   .logo {
-    width: 10%;
-    position: absolute;
-    left: 50%;
-    top: 3%;
-    translate: -50%;
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
   }
 
-  .desktop-nav {
+  .menu-icon {
+    width: 50px;
+    cursor: pointer;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+    opacity: 0;
+  }
+
+  nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+  }
+
+  nav ul li a:hover {
+    color: #ff5ae2;
+  }
+
+  nav ul {
+    width: 100%;
+    background: linear-gradient (#ff54a2, #ff575a);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #ffa283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+  }
+
+  button img {
+    width: 20px;
     display: none;
   }
 
-  /* ? Hamburger Menu Icon*/
-
-  .hamburger-icon img {
-    position: absolute;
-    left: 80%;
-    top: 3.5%;
-    width: 150px;
+  button:hover img {
+    display: block;
   }
 
-  .hero-img {
-    position: relative;
+  button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .hero-headline {
-    top: 15%;
-    left: 50%;
-    translate: -50% -50%;
-    font-size: 10rem;
-    color: white;
-
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-  }
-
-  .hero-paragraph {
-    top: 25%;
-    left: 50%;
-    translate: -50% -50%;
-    font-size: 5rem;
-    color: #9dd692;
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-  }
-
-  /* ? Hero Button */
-
-  .hero-button-paragraph {
-    top: 85%;
-    left: 40%;
-    translate: -50% -50%;
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    font-size: 5rem;
-    border-style: none;
-    padding: 20px 30px;
-    border-radius: 30px;
-    color: white;
-  }
-
-  .hero-button {
-    top: 85%;
-    left: 65%;
-    translate: -50% -50%;
-    display: inline-block;
-    position: absolute;
-    text-align: center;
-    font-size: 5rem;
-    background-color: purple;
-    border-style: none;
-    padding: 20px 30px;
-    border-radius: 30px;
-    color: white;
-  }
-
-  /* ? Hero Button END */
-
-  /* ?  Hero Image */
-  .hero-img-container {
-    background-image: url("https://i.computer-bild.de/imgs/1/2/6/3/6/6/4/5/Logitech-Streamcam-im-Test-2048x1152-cc5e9569cd1aa218.jpg");
-    height: 80vh;
+  .col-2 .hero-img {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    border-radius: 20px;
+  }
+
+  .color-box {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    background: linear-gradient(#ff54a2, #ff575a);
+    border-radius: 20px;
+    height: 80%;
+    width: 89%;
+    z-index: -1;
+  }
+
+  .add-button img {
+    width: 35px;
+    margin: 5px;
+  }
+
+  .add-button {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .col-1 {
+    flex-basis: 40%;
     position: relative;
-    background-position: center;
+    margin: 50px;
   }
 
-  /* ?  Hero Image END*/
-
-  /* ? Go Live Section*/
-
-  .go-live-section {
-    border: red solid 2px;
+  .col-1 h2 {
+    font-size: 2.3rem;
+    color: white;
   }
 
-  .go-live-h2 {
-    border: solid red 3px;
+  .col-1 h3 {
+    font-size: 1.9rem;
+    color: white;
+    font-weight: 100;
+    margin: 20px 0 10px;
+  }
+
+  .col-1 p {
+    font-size: 1rem;
+    color: white;
+    font-weight: 100;
+  }
+
+  .col-1 h4 {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    color: white;
+  }
+}
+
+@media (min-width: 576px) {
+  .color-box {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    background: linear-gradient(#ff54a2, #ff575a);
+    border-radius: 20px;
+    height: 82%;
+    width: 89%;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .color-box {
+    position: absolute;
+    right: 5%;
+    top: 20%;
+    background: linear-gradient(#ff54a2, #ff575a);
+    border-radius: 20px;
+    height: 90%;
+    width: 89%;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    cursor: pointer;
+    margin: 30px 0;
+  }
+
+  .menu-icon {
+    width: 50px;
+    cursor: pointer;
+    display: none;
+  }
+
+  nav {
+    flex: 1;
+    text-align: right;
+    opacity: 100;
+  }
+
+  nav ul li {
+    list-style: none;
     display: inline-block;
-    font-size: 5rem;
-    margin: 0;
+    margin-right: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+  }
+
+  nav ul li a:hover {
+    color: #ff5ae2;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+  }
+
+  .col-1 {
+    flex-basis: 40%;
+    position: relative;
+    margin: 50px;
+  }
+
+  .col-1 h2 {
+    font-size: 3.3rem;
+    color: black;
+  }
+
+  .col-1 h3 {
+    font-size: 1.9rem;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+  }
+
+  .col-1 p {
+    font-size: 1rem;
+    color: #b7b7b7;
+    font-weight: 100;
+  }
+
+  .col-1 h4 {
+    margin: 30px 0;
+    font-size: 1.2rem;
+    color: black;
+  }
+
+  button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: width 0.5s;
+  }
+
+  button img {
+    width: 20px;
+    display: none;
+  }
+
+  button:hover img {
+    display: block;
+  }
+
+  button:hover {
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .col-1::after {
+    content: "";
+    width: 10px;
+    height: 57%;
+    background: linear-gradient(to right, #ff469f, #ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+  }
+
+  .col-2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+  }
+
+  .col-2 .hero-img {
+    width: 90%;
+  }
+
+  .color-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(#ff54a2, #ff575a);
+    border-radius: 20px;
+    height: 100%;
+    width: 80%;
+    z-index: -1;
+  }
+
+  .add-button img {
+    width: 35px;
+    margin: 5px;
+  }
+
+  .add-button {
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
   }
 }
