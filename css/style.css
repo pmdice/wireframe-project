@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+/* ? Header */
+header {
+  background-color: rgb(36, 35, 35);
+  height: 7rem;
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+#big {
+  display: none;
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.brand {
+  display: inline-block;
+  padding-top: 2.1rem;
+}
+
+.logo {
+  width: 2rem;
+  vertical-align: middle;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+#hamburger {
+  width: 2rem;
+  float: left;
+  margin: 2.5rem 1rem;
+}
+
+#cart {
+  width: 2rem;
+  float: right;
+  margin: 2.5rem 1rem;
+}
+
+/* ? Section Top */
+.top {
+  height: 50rem;
+  position: relative;
+  background-image: url(https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/folio-touch-hpb-tablet.png?v=1);
+  background-size: cover;
+  background-position: center;
+  box-sizing: content-box;
+}
+
+.top h1 {
+  min-width: 20rem;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #black;
+  /* text-shadow: 2px 1px #ffffff; */
+}
+.top h1::before {
+  content: "Folio Touch for Ipad Pro 11-inch";
+  font-size: 0.8rem;
+  font-weight: 300;
+  display: block;
+}
+
+.topbutton {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #2f3132;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  width: 9rem;
+  height: 3rem;
+  box-sizing: border-box;
+}
+
+/* ? nav categories */
+.middle {
+  position: relative;
+}
+
+.one {
+  height: 27rem;
+}
+
+.navmenu {
+  text-align: center;
+}
+
+.navmenu img {
+  width: 6rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.navmenu div {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.navmenu td:hover {
+  background-color: #252a2c81;
+  color: #ffffff;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+/* ! for centering */
+.centering {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ?middle two section */
+.two {
+  padding-top: 5rem;
+  height: 45rem;
+  background-image: url(https://resource.logitech.com/w_420,h_1024,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/rally-bars-hpb-mobile-v2.png?v=1);
+  background-size: cover;
+  background-position: center;
+}
+
+.raising {
+  margin-top: 5rem;
+}
+
+.two h1 {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+
+.two h1 > span {
+  color: #814efa;
+}
+
+.two h1::after {
+  content: "Introducing Rally Bar Mini and rally Bar, two all-in-one video bars for small to midsize room.";
+  font-size: 0.8rem;
+  font-weight: 300;
+  display: block;
+  text-transform: none;
+  padding: 0 2rem;
+}
+
+.twobuttons {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.twobutton1,
+.twobutton2 {
+  background-color: #2f3132;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9rem;
+  height: 3rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.twobutton2 {
+  margin-left: 0.7rem;
+}
+
+.space {
+  height: 5rem;
+}
+
+/* ? 3th mid section */
+.three {
+  padding-top: 5rem;
+  height: 45rem;
+  background-image: url(https://resource.logitech.com/w_420,h_1024,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/ergo-m575-hpb-mobile.png?v=1);
+  background-position: bottom;
+  background-size: cover;
+  background-position: center;
+}
+
+.less {
+  text-align: center;
+}
+
+.three h1 {
+  width: 20rem;
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 400;
+  margin: 0 auto;
+}
+
+.three h1 > span {
+  color: #00b8fc;
+}
+
+.three h1::before {
+  content: "ERGO M575 Wireless Trackball";
+  font-size: 0.9rem;
+  font-weight: 300;
+  display: block;
+  text-transform: none;
+  padding: 0 2rem;
+}
+
+.button1 {
+  background-color: #2f3132;
+  color: #ffffff;
+  border: none;
+  font-weight: 700;
+  font-size: 0.8rem;
+  width: 9rem;
+  height: 3rem;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+/* ? for Footer */
+footer {
+  height: 53rem;
+  background-color: #252a2c;
+  border: 1px solid black;
+  text-align: center;
+  padding: 3.2rem;
+}
+
+.foot li {
+  display: inline-block;
+  width: 15rem;
+  height: 2rem;
+  text-align: left;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.bottomicons img {
+  width: 2rem;
+  display: inline-block;
+  margin: 1rem;
+}
+
+.emails {
+  position: relative;
+  top: 0;
+}
+
+.emails input {
+  width: 15rem;
+  height: 3rem;
+  vertical-align: middle;
+  padding-left: 0.5rem;
+  border: none;
+  border-radius: 0;
+}
+
+.emails input::placeholder {
+  text-transform: uppercase;
+}
+
+#email {
+  width: 3rem;
+  height: 3rem;
+  vertical-align: middle;
+  border: none;
+  background-color: #dcfd00;
+}
+
+.agree {
+  width: 18rem;
+  margin: 2rem auto;
+}
+
+.agree td {
+  vertical-align: top;
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+.agree input {
+  margin-top: 0.2rem;
+}
+
+.agree td {
+  padding-left: 1rem;
+  text-align: left;
+}
+
+#underline {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+/* ? for Mobile */
+media (min-width: 576px) {
+  header {
+    background-color: rgb(61, 59, 59);
+  }
+
+  .brand {
+    padding-top: 2.1rem;
+  }
+
+  .logo {
+    width: 2rem;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 1.5rem;
+  }
+
+  .top h1 {
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+  }
+  .top h1::before {
+    font-size: 0.8rem;
+  }
+  .topbutton {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #2f3132;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    width: 9rem;
+    height: 3rem;
+  }
+  .navmenu img {
+    width: 6rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+
+  .navmenu div {
+    font-size: 0.8rem;
+  }
+
+  .two {
+    background-image: url(https://resource.logitech.com/w_420,h_1024,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/rally-bars-hpb-mobile-v2.png?v=1);
+  }
+
+  .three h1 {
+    width: 20rem;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .three h1 > span {
+    color: #00b8fc;
+  }
+
+  .three h1::before {
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 0 2rem;
+  }
+
+  .button1 {
+    font-size: 0.8rem;
+    width: 9rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    min-width: 590px;
+    height: 39rem;
+  }
+
+  .foot li {
+    display: inline-block;
+    width: 15rem;
+    height: 2rem;
+    text-align: left;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .bottomicons img {
+    width: 2rem;
+    display: inline-block;
+    margin: 1rem;
+  }
+
+  .emails {
+    position: relative;
+    top: 0;
+  }
+
+  .emails input {
+    width: 15rem;
+    height: 3rem;
+    vertical-align: middle;
+    padding-left: 0.5rem;
+    border: none;
+    border-radius: 0;
+  }
+
+  .emails input::placeholder {
+    text-transform: uppercase;
+  }
+
+  #email {
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    border: none;
+    background-color: #dcfd00;
+  }
+
+  .agree {
+    width: 18rem;
+    margin: 2rem auto;
+  }
+
+  .agree td {
+    vertical-align: top;
+    color: #ffffff;
+    font-size: 0.9rem;
+  }
+
+  .agree input {
+    margin-top: 0.2rem;
+  }
+
+  .agree td {
+    padding-left: 1rem;
+  }
+}
+
+/* ? for Tablet */
+@media (min-width: 768px) {
+  header {
+    background-color: rgb(82, 79, 79);
+  }
+
+  .brand {
+    padding-top: 1.8rem;
+  }
+
+  .logo {
+    width: 3rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .top {
+    background-image: url(https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/folio-touch-hpb-tablet.png?v=1);
+    background-size: 55rem;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-color: #e2e2e2;
+  }
+
+  .top h1 {
+    min-width: 25rem;
+    top: 25%;
+    left: 75%;
+    font-size: 3.5rem;
+  }
+
+  .topbutton {
+    top: 37%;
+    left: 75%;
+    background-color: #2f3132;
+    color: #ffffff;
+  }
+
+  .one {
+    height: 30rem;
+  }
+
+  .navmenu img {
+    width: 10rem;
+    height: 6rem;
+  }
+
+  .navmenu div {
+    font-size: 1rem;
+  }
+
+  .two {
+    background-image: url(https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/rally-bars-hpb-tablet.png);
+  }
+
+  .three h1 {
+    width: 25rem;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .three h1 > span {
+    color: #fc5000;
+  }
+
+  .three h1::before {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 2rem;
+  }
+
+  .button1 {
+    font-size: 1rem;
+    width: 11rem;
+    height: 4rem;
+    margin-top: 1rem;
+  }
+
+  footer {
+    min-width: 833px;
+    height: 32rem;
+  }
+}
+
+/* ?for desktop */
+@media (min-width: 992px) {
+  header {
+    background-color: rgb(104, 101, 101);
+  }
+
+  .top {
+    height: 50rem;
+    position: relative;
+    background-image: url(https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/folio-touch-hpb-tablet.png?v=1);
+  }
+  .top h1 {
+    min-width: 40rem;
+    top: 40%;
+    right: 10%;
+    font-size: 5rem;
+  }
+
+  .top h1::before {
+    font-size: 1rem;
+  }
+
+  .topbutton {
+    top: 57%;
+    left: 75%;
+    font-weight: 700;
+    width: 12rem;
+    height: 4rem;
+  }
+
+  .one {
+    height: 35rem;
+  }
+
+  .navmenu img {
+    width: 12rem;
+    height: 8rem;
+  }
+  .navmenu div {
+    font-size: 1.2rem;
+  }
+
+  .two {
+    background-image: url(https://resource.logitech.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/rally-bars-hpb-desktop-v3.png?v=1);
+  }
+
+  .three {
+    background-image: url(https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/homepage/ergo-m575-hpb-tablet.png?v=1);
+  }
+
+  .three h1 {
+    width: 30rem;
+    font-size: 3rem;
+    line-height: 1.5;
+  }
+
+  .three h1 > span {
+    color: #1b8f47;
+  }
+
+  .three h1::before {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 2rem;
+  }
+
+  .button1 {
+    font-size: 1rem;
+    width: 12rem;
+    height: 4.5rem;
+    margin-top: 1.2rem;
+  }
+
+  footer {
+    min-width: 1077px;
+    height: 27rem;
+  }
+}
+
+/* ? FOR 4K */
+@media (min-width: 1440px) {
+  header {
+    background-color: rgb(151, 144, 144);
+  }
+
+  #big {
+    display: block;
+  }
+  .top {
+    /* margin-top: 7rem; */
+    height: 50rem;
+    /* border: 1px solid black; */
+    position: relative;
+    background-image: url(https://resource.logitech.com/w_1024,h_1366,c_limit,q_auto,f_auto,dpr_1.0/content/dam/logitech/en/products/mobility/folio-touch/folio-touch-hpb-tablet.png?v=1);
+    background-size: 70rem;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-color: #e2e2e2;
+    box-sizing: content-box;
+    padding-top: 7rem;
+  }
+  .top h1 {
+    min-width: 45rem;
+    position: absolute;
+    top: 40%;
+    left: 70%;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: black;
+    /* text-shadow: 2px 1px #ffffff; */
+  }
+  .top h1::before {
+    content: "Folio Touch for Ipad Pro 11-inch";
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: block;
+  }
+
+  .topbutton {
+    position: absolute;
+    top: 59%;
+    left: 70%;
+    background-color: #2f3132;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 12rem;
+    height: 5rem;
+    box-sizing: border-box;
+  }
+  .one {
+    height: 40rem;
+  }
+  .navmenu img {
+    width: 14rem;
+    height: 9rem;
+  }
+  .navmenu div {
+    font-size: 1.2rem;
+  }
+
+  .three h1 {
+    width: 33rem;
+    font-size: 3.3rem;
+    line-height: 1.5;
+  }
+
+  .three h1 > span {
+    color: #b4157f;
+  }
+
+  .three h1::before {
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 0 2rem;
+  }
+
+  .button1 {
+    font-size: 1.2rem;
+    width: 14rem;
+    height: 5rem;
+    margin-top: 1.6rem;
+  }
+
+  footer {
+    min-width: 1564px;
+    height: 25rem;
+  }
+}
